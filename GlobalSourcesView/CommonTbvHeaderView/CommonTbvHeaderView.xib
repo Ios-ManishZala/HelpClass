@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommonTbvHeaderView" customModule="FBVideoSaver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzF-tT-oVV">
+                    <rect key="frame" x="0.0" y="0.0" width="456" height="82"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyF-Jq-uOa">
+                            <rect key="frame" x="30" y="0.0" width="396" height="82"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEO-Ur-svh">
+                                    <rect key="frame" x="348" y="26.5" width="48" height="29"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="View all">
+                                        <color key="titleColor" name="TxtGrayFontColor"/>
+                                    </state>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="25"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="btnSeeAllAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pOD-JZ-Wd8"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Features" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-5B-R8x">
+                                    <rect key="frame" x="0.0" y="31.5" width="114.5" height="19"/>
+                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="15"/>
+                                    <color key="textColor" name="fontGrayColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="WEO-Ur-svh" secondAttribute="trailing" id="62G-vP-aun"/>
+                                <constraint firstItem="QQx-5B-R8x" firstAttribute="centerY" secondItem="RyF-Jq-uOa" secondAttribute="centerY" id="BiO-C1-LsR"/>
+                                <constraint firstItem="QQx-5B-R8x" firstAttribute="leading" secondItem="RyF-Jq-uOa" secondAttribute="leading" id="X03-58-qbd"/>
+                                <constraint firstItem="WEO-Ur-svh" firstAttribute="centerY" secondItem="QQx-5B-R8x" secondAttribute="centerY" id="e26-rs-bly"/>
+                                <constraint firstItem="WEO-Ur-svh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QQx-5B-R8x" secondAttribute="trailing" constant="20" id="p7Q-KY-aAh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RyF-Jq-uOa" secondAttribute="trailing" constant="30" id="BB1-Lk-gNy">
+                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                        </constraint>
+                        <constraint firstItem="RyF-Jq-uOa" firstAttribute="leading" secondItem="tzF-tT-oVV" secondAttribute="leading" constant="30" id="H9i-OP-j6N"/>
+                        <constraint firstAttribute="bottom" secondItem="RyF-Jq-uOa" secondAttribute="bottom" id="Ojh-yp-9rA"/>
+                        <constraint firstItem="RyF-Jq-uOa" firstAttribute="top" secondItem="tzF-tT-oVV" secondAttribute="top" id="yxz-oh-EIg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tzF-tT-oVV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Irr-Mi-Qrp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tzF-tT-oVV" secondAttribute="trailing" id="TjT-dz-TXR"/>
+                <constraint firstAttribute="bottom" secondItem="tzF-tT-oVV" secondAttribute="bottom" id="cbz-AV-ntd"/>
+                <constraint firstItem="tzF-tT-oVV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xax-Mk-HQO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSeeAll" destination="WEO-Ur-svh" id="dC4-QU-2UH"/>
+                <outlet property="lblTitle" destination="QQx-5B-R8x" id="h8v-KD-ha1"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="-111.16071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TxtGrayFontColor">
+            <color red="0.58039215686274515" green="0.58039215686274515" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="fontGrayColor">
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
